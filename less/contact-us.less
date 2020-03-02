@@ -1,4 +1,49 @@
-
-h1{
-    font-size:46px;
+p{
+    color:@water-blue;
+}
+hr {
+    color:@water-blue;
+    background-color:@water-blue;
+}
+  .contact{
+    padding: 0 1%;
+    padding-bottom: 20px;
+    h2{
+        padding-bottom: 1vh;
+    }
+    button{
+        display:flex;
+        justify-content: center;
+        width:50%;
+        background-color:@mint;
+        color: @water-blue;
+        padding: 1vh 0;
+        border: 2px solid @water-blue;
+        margin:3% auto;
+        @media @phone{
+            width:100%;
+        }
+        &:hover{
+            animation-name:pulse;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+      }
+      input, textarea{
+        border:none;
+        border-bottom:3px solid@water-blue;
+        background-color:@mint;
+        width: 100%;
+        height: 40px;
+    }
+    textarea{
+        font-size:2rem;
+    }
+    label, input{
+        color:@water-blue;
+        margin: 10px 0;
+        display:flex;
+        font-size:1.5rem;
+    }
 }

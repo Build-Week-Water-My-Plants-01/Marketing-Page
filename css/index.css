@@ -1,3 +1,14 @@
+@keyframes pulse {
+  /*pulse button prototype*/
+  from {
+    background-color: #5CDB95;
+    color: #05386B;
+  }
+  to {
+    background-color: #05386B;
+    color: #5CDB95;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -128,7 +139,7 @@ table {
 }
 * {
   box-sizing: border-box;
-  border: 1px solid black;
+  border: 1px solid #05386B;
 }
 html {
   font-size: 62.5%;
@@ -147,13 +158,8 @@ h5 {
   color: #05386B;
 }
 header {
-  padding-top: 88.188px;
-  margin: 0 auto;
-}
-@media (max-width: 500px) {
-  header {
-    padding-top: 122.813px;
-  }
+  padding-top: 10vh;
+  margin: 1vh 0;
 }
 h2 {
   font-size: 3.2rem;
@@ -165,6 +171,9 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
+body {
+  background-color: #5CDB95;
+}
 nav {
   display: flex;
   flex-direction: row;
@@ -175,11 +184,10 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #5CDB95;
+  background-color: #EDF5E1;
 }
 @media (max-width: 500px) {
   nav {
-    flex-wrap: wrap;
     justify-content: center;
   }
 }
@@ -213,6 +221,56 @@ nav .links a {
   text-decoration: none;
   color: black;
 }
-h1 {
-  font-size: 46px;
+p {
+  color: #05386B;
+}
+hr {
+  color: #05386B;
+  background-color: #05386B;
+}
+.contact {
+  padding: 0 1%;
+  padding-bottom: 20px;
+}
+.contact h2 {
+  padding-bottom: 1vh;
+}
+.contact button {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  background-color: #5CDB95;
+  color: #05386B;
+  padding: 1vh 0;
+  border: 2px solid #05386B;
+  margin: 3% auto;
+}
+@media (max-width: 500px) {
+  .contact button {
+    width: 100%;
+  }
+}
+.contact button:hover {
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.contact input,
+.contact textarea {
+  border: none;
+  border-bottom: 3px solid #05386B;
+  background-color: #5CDB95;
+  width: 100%;
+  height: 40px;
+}
+.contact textarea {
+  font-size: 2rem;
+}
+.contact label,
+.contact input {
+  color: #05386B;
+  margin: 10px 0;
+  display: flex;
+  font-size: 1.5rem;
 }
