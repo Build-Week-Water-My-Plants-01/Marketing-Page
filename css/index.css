@@ -170,9 +170,14 @@ h3 {
 p {
   font-size: 1.6rem;
   line-height: 1.4;
+  color: #05386B;
 }
 body {
   background-color: #5CDB95;
+}
+hr {
+  color: #05386B;
+  background-color: #05386B;
 }
 nav {
   display: flex;
@@ -221,16 +226,11 @@ nav .links a {
   text-decoration: none;
   color: black;
 }
-p {
-  color: #05386B;
-}
-hr {
-  color: #05386B;
-  background-color: #05386B;
-}
 .contact {
+  width: 80%;
   padding: 0 1%;
   padding-bottom: 20px;
+  margin: 0 auto;
 }
 .contact h2 {
   padding-bottom: 1vh;
