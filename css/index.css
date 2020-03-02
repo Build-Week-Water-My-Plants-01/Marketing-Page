@@ -1,3 +1,14 @@
+@keyframes pulse {
+  /*pulse button prototype*/
+  from {
+    background-color: #5CDB95;
+    color: #05386B;
+  }
+  to {
+    background-color: #05386B;
+    color: #5CDB95;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -128,6 +139,7 @@ table {
 }
 * {
   box-sizing: border-box;
+  border: 1px solid #05386B;
 }
 html {
   font-size: 62.5%;
@@ -135,7 +147,7 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: red;
+  color: #EDF5E1;
 }
 h1,
 h2,
@@ -143,7 +155,11 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: red;
+  color: #05386B;
+}
+header {
+  padding-top: 10vh;
+  margin: 1vh 0;
 }
 h2 {
   font-size: 3.2rem;
@@ -154,33 +170,39 @@ h3 {
 p {
   font-size: 1.6rem;
   line-height: 1.4;
+  color: #05386B;
 }
-.container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
+body {
+  background-color: #5CDB95;
+}
+hr {
+  color: #05386B;
+  background-color: #05386B;
 }
 nav {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  background-color: green;
-}
-nav h1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  font-size: 4rem;
-  margin: 1vh;
+  background-color: #EDF5E1;
+}
+@media (max-width: 500px) {
+  nav {
+    justify-content: center;
+  }
+}
+nav img {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 10vh;
 }
 nav .links {
   display: flex;
@@ -189,9 +211,66 @@ nav .links {
   align-items: center;
   flex-wrap: nowrap;
   width: 80%;
-  margin: 1vh 25%;
-  font-size: 1.5rem;
+  margin: 1vh 0 0 20%;
+  font-size: 1.75rem;
+}
+@media (max-width: 500px) {
+  nav .links {
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1vh 2%;
+  }
 }
 nav .links a {
   text-decoration: none;
+  color: black;
+}
+.contact {
+  width: 80%;
+  padding: 0 1%;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+.contact h2 {
+  padding-bottom: 1vh;
+}
+.contact button {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  background-color: #5CDB95;
+  color: #05386B;
+  padding: 1vh 0;
+  border: 2px solid #05386B;
+  margin: 3% auto;
+}
+@media (max-width: 500px) {
+  .contact button {
+    width: 100%;
+  }
+}
+.contact button:hover {
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.contact input,
+.contact textarea {
+  border: none;
+  border-bottom: 3px solid #05386B;
+  background-color: #5CDB95;
+  width: 100%;
+  height: 40px;
+}
+.contact textarea {
+  font-size: 2rem;
+}
+.contact label,
+.contact input {
+  color: #05386B;
+  margin: 10px 0;
+  display: flex;
+  font-size: 1.5rem;
 }
