@@ -1,6 +1,7 @@
 // General Styling
 * {
     box-sizing: border-box;
+    border: 1px solid black;
   }
   
   html {
@@ -9,14 +10,20 @@
   
   html, body {
     font-family: 'Ubuntu', sans-serif;
-    color: red;
+    color: @ivory;
   }
   
   h1, h2, h3, h4, h5 {
     font-family: 'Russo One', sans-serif;
-    color: red;
+    color: @water-blue;
   }
-  
+  header{
+    padding-top:88.188px;
+    margin: 0 auto;
+    @media @phone{
+      padding-top:122.813px;
+    }
+  }
   h2 {
     font-size: 3.2rem;
   }
@@ -28,12 +35,6 @@
   p {
     font-size: 1.6rem;
     line-height: 1.4;
-  }
-  
-  .container {
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto;  
   }
   
   

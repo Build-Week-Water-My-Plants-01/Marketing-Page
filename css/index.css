@@ -128,6 +128,7 @@ table {
 }
 * {
   box-sizing: border-box;
+  border: 1px solid black;
 }
 html {
   font-size: 62.5%;
@@ -135,7 +136,7 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: red;
+  color: #EDF5E1;
 }
 h1,
 h2,
@@ -143,7 +144,16 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: red;
+  color: #05386B;
+}
+header {
+  padding-top: 88.188px;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  header {
+    padding-top: 122.813px;
+  }
 }
 h2 {
   font-size: 3.2rem;
@@ -155,32 +165,31 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
-.container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-}
 nav {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  background-color: green;
-}
-nav h1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  font-size: 4rem;
-  margin: 1vh;
+  background-color: #5CDB95;
+}
+@media (max-width: 500px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+nav img {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 10vh;
 }
 nav .links {
   display: flex;
@@ -189,9 +198,21 @@ nav .links {
   align-items: center;
   flex-wrap: nowrap;
   width: 80%;
-  margin: 1vh 25%;
-  font-size: 1.5rem;
+  margin: 1vh 0 0 20%;
+  font-size: 1.75rem;
+}
+@media (max-width: 500px) {
+  nav .links {
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1vh 2%;
+  }
 }
 nav .links a {
   text-decoration: none;
+  color: black;
+}
+h1 {
+  font-size: 46px;
 }
