@@ -236,14 +236,14 @@ nav .links a {
   text-decoration: none;
   color: black;
 }
-body {
+body.contact {
   background-image: url('../img/garden.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 @media (max-width: 800px) {
-  body {
+  body.contact {
     height: 100%;
     background-image: url('../img/garden.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -305,4 +305,28 @@ body {
   margin: 10px 0;
   display: flex;
   font-size: 1.5rem;
+}
+.about .team {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about .team .member {
+  width: 25%;
+  background-color: #EDF5E1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 3vh 2.5%;
+  padding: 2vh 1%;
+  border-radius: 20px;
+}
+.about .team .member img {
+  width: 100%;
+  height: 50%;
+  border-radius: 20px;
 }
