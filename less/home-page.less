@@ -1,0 +1,310 @@
+html {
+  background-image: url("https://images.unsplash.com/photo-1459664018906-085c36f472af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body {
+  margin: 5%;
+}
+
+#topSection {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+.signUp button {
+  border: 3px solid #05386b;
+  padding: 10%;
+  border-radius: 50%;
+  font-size: 40px;
+  font-family: "Fredoka One";
+  background-color: #5cdb9596;
+  color: #05386b;
+  margin-left: 32%;
+  margin-top: 2%;
+}
+.signup button:hover {
+  color: rgba(219, 219, 24, 0.836);
+
+  border: dotted yellow 12px;
+}
+nav img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 10%;
+  font-size: 4rem;
+  margin: 1vh;
+  height: 10vh;
+  position: absolute;
+  left: 40;
+  top: 0;
+  border-radius: 50%;
+}
+
+.headerTitle {
+  font-size: 46px;
+  font-family: "Indie Flower";
+  border: 3px solid #05386b;
+  padding-left: 16%;
+  padding-right: 16%;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  border-radius: 40%;
+  background-color: #fdfdfda8;
+  font-weight: bolder;
+  color: #05386b;
+  width: 65%;
+  margin-left: 18%;
+  text-align: center;
+}
+
+.middleSection,
+.missionSection {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: center;
+  border: 3px solid #05386b;
+  padding: 5%;
+  font-family: "Fredoka One";
+  margin-left: 25%;
+  margin-top: 5%;
+  border-radius: 20px;
+  background-color: #fdfdfda8;
+  color: #05386b;
+  font-size: 26px;
+}
+.middleSection p {
+  font-family: "Signika";
+  line-height: 30px;
+  font-size: 20px;
+}
+.middleSection p span {
+  font-family: "Indie Flower";
+  font-weight: 900;
+  font-size: 46px;
+  padding: 5px;
+}
+.youCan {
+  text-align: center;
+  border: 3px solid #05386b;
+  width: 25%;
+  margin-left: 37%;
+  margin-top: 2%;
+  padding: 2%;
+  border-radius: 10px;
+  background-color: #fdfdfda8;
+  font-family: "Signika";
+  color: #05386b;
+  font-size: 20px;
+}
+.youCan span {
+  font-family: "Indie Flower";
+  font-weight: 900;
+  font-size: 26px;
+  padding: 5px;
+}
+.bottomSection {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+.setWatering,
+.setFeeding,
+.keepTrack {
+  display: flex;
+  border: 3px solid #05386b;
+  padding: 3%;
+  border-radius: 50%;
+  font-size: 18px;
+  font-family: "Fredoka One";
+  background-color: #fdfdfda8;
+  color: #05386b;
+  width: 20%;
+  height: 20%;
+  text-align: center;
+
+  flex-direction: row;
+  margin-top: 5%;
+}
+.setWatering {
+  margin-left: 15%;
+}
+
+.setFeeding {
+  margin-right: 15%;
+}
+
+.setWatering h2,
+.setFeeding h2,
+.keepTrack h2 {
+  margin-top: 5%;
+}
+
+.fas {
+  font-size: 36px;
+}
+.bottomSection img {
+  margin-top: 5%;
+}
+
+.setWatering:hover {
+  background-color: #d9e9e0;
+  border: dotted #05386b 8px;
+  color: #08813e;
+  line-height: 20px;
+}
+.setFeeding:hover {
+  background-color: #d9e9e0;
+  border: dotted #05386b 8px;
+  color: #08813e;
+  line-height: 20px;
+}
+.keepTrack:hover {
+  background-color: #d9e9e0;
+  border: dotted #05386b 8px;
+  color: #08813e;
+  line-height: 20px;
+}
+.bottomLogo {
+  border-radius: 50%;
+}
+
+// media queries
+
+@media (max-width: 800px) {
+  nav {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .signUp button {
+    margin-left: 20%;
+  }
+  .bottomSection {
+    flex-direction: column;
+  }
+  .setWatering {
+    width: 40%;
+    height: 60%;
+    margin-left: 30%;
+  }
+  .setFeeding {
+    width: 40%;
+    height: 60%;
+    margin-left: 30%;
+  }
+  .keepTrack {
+    width: 40%;
+    height: 60%;
+    margin-left: 30%;
+  }
+  .bottomLogo {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .signUp button {
+    margin-left: 20%;
+  }
+  .bottomSection {
+    flex-direction: column;
+  }
+  .setWatering {
+    width: 40%;
+    height: 60%;
+    margin-left: 30%;
+  }
+  .setFeeding {
+    width: 40%;
+    height: 60%;
+    margin-left: 30%;
+  }
+  .keepTrack {
+    width: 40%;
+    height: 60%;
+    margin-left: 30%;
+  }
+  .bottomLogo {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  nav {
+    justify-content: center;
+  }
+  nav .links {
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1vh 2%;
+    font-size: 1.5rem;
+  }
+  nav img {
+    display: none;
+  }
+  .signUp button {
+    margin-right: 35%;
+  }
+  .bottomSection {
+    flex-direction: column;
+  }
+  .setWatering {
+    width: 40%;
+    height: 60%;
+    margin-left: 30%;
+  }
+  .setFeeding {
+    width: 40%;
+    height: 60%;
+    margin-left: 30%;
+  }
+  .keepTrack {
+    width: 40%;
+    height: 60%;
+    margin-left: 30%;
+  }
+  .bottomLogo {
+    display: none;
+  }
+}
+@media (max-width: 1050px) {
+  nav {
+    flex-direction: column;
+    flex-flow: nowrap;
+    justify-content: space-around;
+  }
+  .signUp button {
+    margin-left: 25%;
+  }
+  .bottomSection {
+    flex-direction: column;
+  }
+  .setWatering {
+    width: 40%;
+    height: 60%;
+    margin-left: 30%;
+  }
+  .setFeeding {
+    width: 40%;
+    height: 60%;
+    margin-left: 30%;
+  }
+  .keepTrack {
+    width: 40%;
+    height: 60%;
+    margin-left: 30%;
+  }
+  .bottomLogo {
+    display: none;
+  }
+}
