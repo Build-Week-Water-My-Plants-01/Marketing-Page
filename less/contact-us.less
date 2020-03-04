@@ -1,0 +1,66 @@
+body.contact{
+    background-image: url('../img/garden.jpg');
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    @media @tablet{
+        height: 100%;
+        background-image: url('../img/garden.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+.contact{
+    width:80%;
+    padding: 0 1%;
+    padding-bottom: 20px;
+    margin:0 auto;
+    .container{
+        
+        background-color:@ivory;
+        padding-top: 2vh;
+        margin: 10vh 10%;
+    }
+    h2{
+        padding-bottom: 1vh;
+    }
+    button{
+        display:flex;
+        justify-content: center;
+        width:50%;
+        background-color:@mint;
+        color: @water-blue;
+        padding: 1vh 0;
+        border: 2px solid @water-blue;
+        margin:3% auto;
+        @media @tablet{
+            width:100%;
+        }
+        &:hover{
+            animation-name:pulse;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+      }
+      input, textarea{
+        border:none;
+        border-bottom:3px solid@water-blue;
+        background-color:@ivory;
+        width: 100%;
+        height: 40px;
+    }
+    textarea{
+        font-size:2rem;
+    }
+    label, input{
+        color:@water-blue;
+        padding: 1vh 0;
+        margin: 10px 0;
+        display:flex;
+        font-size:1.5rem;
+    }
+}
+

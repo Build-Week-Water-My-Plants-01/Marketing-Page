@@ -1,8 +1,14 @@
 // Flex mixin
-.flex(@direction:row, @justify:center, @align:center, @wrap:nowrap) {
-  display: flex;
-  flex-direction: @direction;
-  justify-content: @justify;
-  align-items: @align;
-  flex-wrap: @wrap;
+.flex(@direction:row, @justify:center, @align:center, @wrap:nowrap){
+    display:flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items:@align;
+    flex-wrap:@wrap;
 }
+
+// Animation Prototypes
+@keyframes pulse{ /*pulse button prototype*/
+    from {background-color:@mint; color:@water-blue}
+    to {background-color:@water-blue; color:@mint}
+  }
