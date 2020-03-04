@@ -8,27 +8,34 @@ nav {
       justify-content: center;
   }
   background-color:@ivory;
-  
-  img{
-      .flex(@justify:flex-start);
-      height: 4vh;
+  .image{
+      width: 125px;
+      opacity:1;
+    img{
+        width:100%;
+        .flex(@justify:flex-start);
+        height: 10vh;
+        border-radius:50px;
+    }
   }
-  
   .links{
       .flex(@justify:space-around);
       width:80%;
       margin: 1vh 0 0 20%;
       font-size:1.75rem;
-      @media @phone{
+      @media @tablet{
           width:100%;
           align-items:center;
           justify-content:space-evenly;
           margin: 1vh 2%;
+          font-size: 1.5rem;
+      }
+      @media @phone{
+          font-size: 1.25rem;
       }
       a{
       text-decoration:none;
       color:black;
-      }
-  
+      } 
   }
 }

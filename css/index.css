@@ -201,13 +201,19 @@ nav {
     justify-content: center;
   }
 }
-nav img {
+nav .image {
+  width: 125px;
+  opacity: 1;
+}
+nav .image img {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
-  height: 4vh;
+  height: 10vh;
+  border-radius: 50px;
 }
 nav .links {
   display: flex;
@@ -219,12 +225,18 @@ nav .links {
   margin: 1vh 0 0 20%;
   font-size: 1.75rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   nav .links {
     width: 100%;
     align-items: center;
     justify-content: space-evenly;
     margin: 1vh 2%;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  nav .links {
+    font-size: 1.25rem;
   }
 }
 nav .links a {
@@ -259,22 +271,6 @@ body {
   color: #caca1e;
   border: 3px solid yellow;
   text-decoration: underline;
-}
-nav img {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: nowrap;
-  width: 10%;
-  font-size: 4rem;
-  margin: 1vh;
-  height: 10vh;
-  position: absolute;
-  left: 40;
-  top: 0;
-  border-radius: 50%;
 }
 .headerTitle {
   font-size: 36px;
@@ -402,10 +398,6 @@ nav img {
   border-radius: 50%;
 }
 @media (max-width: 800px) {
-  nav {
-    flex-direction: column;
-    justify-content: space-around;
-  }
   .signUp button {
     margin-left: 20%;
   }
@@ -432,10 +424,6 @@ nav img {
   }
 }
 @media (max-width: 600px) {
-  nav {
-    flex-direction: column;
-    justify-content: space-around;
-  }
   .signUp button {
     margin-left: 20%;
   }
@@ -462,19 +450,6 @@ nav img {
   }
 }
 @media (max-width: 500px) {
-  nav {
-    justify-content: center;
-  }
-  nav .links {
-    width: 100%;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 1vh 2%;
-    font-size: 1.5rem;
-  }
-  nav img {
-    display: none;
-  }
   .signUp button {
     margin-right: 35%;
   }
@@ -501,11 +476,6 @@ nav img {
   }
 }
 @media (max-width: 1050px) {
-  nav {
-    flex-direction: column;
-    flex-flow: nowrap;
-    justify-content: space-around;
-  }
   .signUp button {
     margin-left: 25%;
   }
