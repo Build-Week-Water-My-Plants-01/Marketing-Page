@@ -161,6 +161,11 @@ header {
   padding-top: 10vh;
   margin: 1vh 0;
 }
+@media (max-width: 500px) {
+  header {
+    padding-top: 5vh;
+  }
+}
 h2 {
   font-size: 3.2rem;
 }
@@ -341,5 +346,6 @@ body.about {
   text-align: center;
 }
 .about .team .member p {
+  margin-left: 1%;
   line-height: 3vh;
 }
