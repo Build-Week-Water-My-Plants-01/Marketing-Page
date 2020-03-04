@@ -144,8 +144,6 @@ table {
 html {
   font-size: 62.5%;
 }
-<<<<<<< HEAD
-=======
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
@@ -163,7 +161,6 @@ header {
   padding-top: 10vh;
   margin: 1vh 0;
 }
->>>>>>> master
 h2 {
   font-size: 3.2rem;
 }
@@ -192,18 +189,12 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-<<<<<<< HEAD
-  background-color: #fdfdfdc5;
-  padding: 1%;
-  padding-bottom: 2%;
-=======
   background-color: #EDF5E1;
 }
 @media (max-width: 500px) {
   nav {
     justify-content: center;
   }
->>>>>>> master
 }
 nav img {
   display: flex;
@@ -225,11 +216,6 @@ nav .links {
   align-items: center;
   flex-wrap: nowrap;
   width: 80%;
-<<<<<<< HEAD
-  margin: 1vh 25%;
-  font-size: 2rem;
-  margin-top: 2%;
-=======
   margin: 1vh 0 0 20%;
   font-size: 1.75rem;
 }
@@ -245,7 +231,6 @@ nav .links {
   nav .links {
     font-size: 1.5rem;
   }
->>>>>>> master
 }
 nav .links a {
   text-decoration: none;
